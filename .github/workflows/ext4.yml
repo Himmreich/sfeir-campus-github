@@ -1,11 +1,11 @@
 name: reusable workflow
+inputs:
+  node-version:
+    description: 'Node version'
+    default: 'lts/*'
+    required: false
 on:
   workflow_dispatch:
-    inputs:
-      node-version:
-        description: 'Node version'
-        default: 'lts/*'
-        required: false
 jobs:
   run-npm-test:
     runs-on: ubuntu-latest
