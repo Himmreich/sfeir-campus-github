@@ -8,3 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout
       - uses: actions/setup-node
+        with:
+          node-version: 'lts'
