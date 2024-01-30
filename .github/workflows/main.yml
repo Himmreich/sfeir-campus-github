@@ -1,10 +1,12 @@
 name: Build
+
 on:
+  push:
   workflow_dispatch:
 
 jobs:
-  job1:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-      - uses: actions/checkout
+      - uses: actions/checkout@v4
