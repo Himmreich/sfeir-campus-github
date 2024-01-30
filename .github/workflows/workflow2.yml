@@ -1,0 +1,8 @@
+name: reusable workflow 2
+on:
+  workflow_dispatch:
+jobs:
+  run-npm-test:
+    uses: ./.github/workflows/ext4.yml
+    with:
+      node-version: '20'
