@@ -5,13 +5,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout
-
       - name: Setup node
         uses: actions/setup-node
         with:
